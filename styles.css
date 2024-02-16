@@ -1,0 +1,10 @@
+body {
+    background-color: orange; /* Replace #f0f0f0 with the color code you want */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+nav{
+    background-color: white;
+    padding: 10px;
+}

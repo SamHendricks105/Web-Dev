@@ -72,12 +72,16 @@ header {
     justify-self: center;
     align-self: center;
     z-index: 3;
+    grid-row: 1/2;
+    
 }
 
 
 nav {
     display: flex;
     justify-content: space-around;
+    background-color: gray;
+    
 }
 
 
@@ -105,6 +109,9 @@ footer p a:hover {
     width: 200px;
     height: 200px;
     border: 10px solid orange;
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .rivers-card{
@@ -127,9 +134,21 @@ footer p a:hover {
     grid-row: 4/9;
 }
 
+
+.card-img, .mountains {
+    width: 100%;
+}
+
+
+
 .mountains{
     grid-column: 2/7;
     grid-row: 5/8;
+    /* width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364; */
+    
 }
 
 .msg{
@@ -141,6 +160,26 @@ footer p a:hover {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* All my links */
+.join {
+    text-decoration: none;
+   color: blue;
+}
+.book{
+   text-decoration: none;
+   color: blue;
+   
+}
+.contact{
+    text-decoration: none;
+    color: blue;
+}
+
+.site{
+    text-decoration: none;
+   color: blue;
+}
+/*  */
 footer {
     background-color: #6f7364;
     padding: 25px 50px;
