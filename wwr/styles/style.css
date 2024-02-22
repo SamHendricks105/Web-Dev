@@ -14,7 +14,10 @@
   #background {
     height: 725px;
 }
-
+a{
+    text-decoration: none;
+    color: black;
+}
 body {font-family: 'Rubrik Vinyl', 'Bradley Hand', sans-serif;
     font-size: 2em;
     background-color: lightblue; 
@@ -132,6 +135,7 @@ footer p a:hover {
 #background{
     grid-column: 1/11;
     grid-row: 4/9;
+    background-color: orange;
 }
 
 
