@@ -1,3 +1,46 @@
+#content {
+    max-width: 1600px;
+ }
+
+header {
+    background-color:lightblue;
+    display: grid;
+    grid-template-columns: 150px auto;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+   
+}
+nav a {
+    text-decoration: none;
+    color: green;
+    text-align: center;
+    padding: 35px;
+}
+footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    margin-top: 200px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.hours_logo_grid {
+
+    display: grid; /* Use grid layout */
+    grid-template-columns: auto auto; /* Two columns */
+    grid-gap: 20px; /* Adjust spacing between the columns */
+}
+
+
+
+
+/****************************Sliding images*****************************/
 .slideshow-container {
     position: relative;
     max-width: 100%;
@@ -36,3 +79,4 @@ img {
 .next {
     right: 0;
 }
+/*************************************************************/
