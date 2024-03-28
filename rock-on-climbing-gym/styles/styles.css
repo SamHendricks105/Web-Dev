@@ -1,5 +1,8 @@
 #content {
     max-width: 1600px;
+    margin: 0 auto;
+    
+    
  }
 
 header {
@@ -12,6 +15,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: lightblue;
+    align-items: center;
    
 }
 nav a {
@@ -19,6 +23,8 @@ nav a {
     color: green;
     text-align: center;
     padding: 35px;
+    font-size: 1.2em;
+    
 }
 footer {
     background-color: #6f7364;
@@ -27,25 +33,62 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
+    /* background-color:lightblue;
+    display: grid;
+    grid-template-columns: 150px auto; */
+    
+}
+.social {
+    display: flex;
 }
 
-
-.hours_logo_grid {
-
-    display: grid; /* Use grid layout */
-    grid-template-columns: auto auto; /* Two columns */
-    grid-gap: 20px; /* Adjust spacing between the columns */
+.main{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
+.logo{
+    grid-column: 2 / 5;
+}
+
+/* .hours{
+    
+} */
+
+.kolob{
+   position: fixed;
+}
+
+/* test  */
+
+.image-container {
+    position: relative;
+    display: inline-block; /* or display: block; depending on your layout */
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%; /* Adjust as needed to vertically center */
+    left: 50%; /* Adjust as needed to horizontally center */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: add a semi-transparent background */
+    padding: 10px; /* Optional: add padding to the text */
+  }
+  
 
 
+/* test  */
 
 /****************************Sliding images*****************************/
 .slideshow-container {
     position: relative;
     max-width: 100%;
     overflow: hidden;
+    
     margin: auto;
+    margin-bottom: 500px;
+
 }
 
 .slide {
