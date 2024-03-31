@@ -71,7 +71,7 @@ footer {
 }
 
 
-  .text-overlay {
+  .join-us-text-overlay, .text-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,21 +86,66 @@ footer {
     margin: 0;
     font-size: 2em;
   }
-  
 
+  .join-us-text-overlay{
+    margin: 0;
+    font-size: 2em;
+}
+  
+.join-us{
+    position: relative;
+    display: block; /* or display: block; depending on your layout */
+}
 .paramount{
    position: fixed;
    z-index: -1;
    max-width: 1600px;
    margin: 0 auto;
 }
+#events{
+    text-align: center;
+    font-size: 5em;
+}
 
+.events_listed{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(15 1fr);
+}
+
+
+.individual_event1{
+    grid-row: 1/4;
+    grid-column:1/8 ;
+    background-color: brown;
+    margin-top: 500px;
+    margin-bottom: 500px;
+    text-align: center;
+}
+.event1-text{
+   background-color: orange;
+    font-size: 2em;
+}
+
+
+.individual_event2{
+    grid-row: 8/12;
+    grid-column:1/8;
+    background-color: brown;
+    text-align: center;
+}
+
+
+.event2-text{
+    background-color: orange;
+    font-size: 2em;
+
+    
+
+}
 /* test  */
 
-  
-
-
-.upcoming-container {
+  .upcoming-container {
     position: relative;
     display: block; /* or display: block; depending on your layout */
     padding: 50px;
