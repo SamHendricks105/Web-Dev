@@ -1,12 +1,18 @@
 #content {
     max-width: 1600px;
     margin: 0 auto;
-    
-    
- }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
 
 header {
-    background-color:lightblue;
+    background-color: hwb(202 43% 3%);;
     display: grid;
     grid-template-columns: 150px auto;
     
@@ -14,7 +20,7 @@ header {
 nav {
     display: flex;
     justify-content: space-around;
-    background-color: lightblue;
+    background-color:hwb(202 43% 3%);
     align-items: center;
    
 }
@@ -33,6 +39,8 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    max-width: 1600px;
+    bottom: 100%;
     
     /* background-color:lightblue;
     display: grid;
@@ -41,30 +49,64 @@ footer {
 }
 .social {
     display: flex;
+    flex-shrink: 0; /* Ensure footer does not shrink */
 }
 
 .main{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    background-color: lightseagreen;
+    margin-bottom: 500px;
 }
 
 .logo{
-    grid-column: 2 / 5;
+    grid-column: 1 / 4;
 }
 
-/* .hours{
+.hours{
+    grid-column: 5/8;
     
-} */
+    font-size: 2em;
+    
+}
 
-.kolob{
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .text-overlay h2,
+  .text-overlay p {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+
+.paramount{
    position: fixed;
+   z-index: -1;
+   max-width: 1600px;
+   margin: 0 auto;
 }
 
 /* test  */
 
-.image-container {
+  
+
+
+.upcoming-container {
     position: relative;
-    display: inline-block; /* or display: block; depending on your layout */
+    display: block; /* or display: block; depending on your layout */
+    padding: 50px;
+    margin-top: 100px;
+    
+    background-color: greenyellow;
   }
   
   .image-text {
@@ -74,7 +116,9 @@ footer {
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
     background-color: rgba(255, 255, 255, 0.7); /* Optional: add a semi-transparent background */
     padding: 10px; /* Optional: add padding to the text */
-  }
+    
+    
+}
   
 
 
@@ -87,7 +131,7 @@ footer {
     overflow: hidden;
     
     margin: auto;
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
 
 }
 
