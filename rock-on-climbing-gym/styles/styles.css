@@ -211,9 +211,16 @@ padding: 15px 30px; /* Increase padding to make the button larger */
     
 }
   
+#waiver{
+    background-color: lightblue;
+    padding: 50px;
+    font-size: 2em;
+}
 
-
-/* test  */
+#text-entry-page-body{
+    background-color: #007bff;
+   
+}
 
 /****************************Sliding images*****************************/
 .slideshow-container {

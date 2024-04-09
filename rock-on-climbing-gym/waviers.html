@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
+    <title>Waviers</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -40,12 +40,21 @@
                 <div class="individual_event1">
                     <h2>Waviers</h2>
                    
-                <form action="/my-handling-form-page" method="post">
-                <!--  -->
-                <li class="button">
-                    <button  type="submit" class = "buttonb">Click here to fill out our wavier</button>
-                  </li>
-            </form>
+                    <form id="myForm" action="/my-handling-form-page" method="post">
+                        <!-- Your form elements -->
+                    </form>
+                    
+                    <!-- Your button -->
+                    <li class="button">
+                        <button id="redirectButton" class="buttonb">Click here to fill out our waiver</button>
+                    </li>
+                    
+                    <script>
+                    document.getElementById("redirectButton").addEventListener("click", function() {
+                        // Redirect to the text entry page
+                        window.location.href = "./text-entry-page.html";
+                    });
+                    </script>
                 
                 
                 
@@ -57,7 +66,7 @@
                     <h2>Pricing </h2>
                     
                     <h2>Mebership pricing</h2>
-                    <p class="pricing-text"> <br> All Access Monnthly Membership $49.99 <br>
+                    <p class="pricing-text"> <br> All Access Monthly Membership $49.99 <br>
                         All Access Yearly Membership $450 <br>
                         **************************************************************************************************** 
                     </p>

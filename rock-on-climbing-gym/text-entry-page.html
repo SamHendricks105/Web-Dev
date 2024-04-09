@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Text Entry Page</title>
+<link rel="stylesheet" href="./styles/styles.css">
+<script>
+    function submitForm() {
+        // Clear the text box
+        document.getElementById("textInput").value = "";
+        
+        // Display "Waiver received" message
+        document.getElementById("message").innerText = "Waiver received";
+        
+        // Prevent form submission (to avoid page reload)
+        return false;
+    }
+</script>
+</head>
+<body id="text-entry-page-body">
+    
+
+<div id="content">
+    
+    
+
+    <div id="waiver">
+        <h1>Please Read and Sign you name in the box to Agree</h1>
+    <p>I promise to not die.(On a real gym site there would be an actual wavier here.)</p>
+
+    <form id="textEntryForm" onsubmit="return submitForm()">
+        <label for="textInput">Type Your full name here:</label><br>
+        <textarea id="textInput" name="textEntry" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+    
+    <p id="message"></p>
+
+
+    </div>
+    
+
+
+</div>
+
+
+</body>
+</html>
